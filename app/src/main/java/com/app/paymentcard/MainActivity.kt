@@ -173,10 +173,7 @@ class MainActivity : AppCompatActivity() {
 
 
     enum class Cards(val pattern: Pattern? = null) {
-        /*2221 2720*/
         UNKNOWN,
-
-        //        MASTERCARD(Pattern.compile("^(?:5[1-5][0-9]{2}|2[2-7][01])[0-9]{12}\$")),
         MASTERCARD(Pattern.compile("^5[1-5][0-9]{14}\$|^(?:222[1-9]|22[3-9][1-9]|2[3-6][0-9]{2}|27[0-1][0-9]|2720)[0-9]{12}")),
         VISA(Pattern.compile("^4[0-9]{12}(?:[0-9]{3})?\$")),
         AMEX(Pattern.compile("^3[47][0-9]{5,}\$")),
