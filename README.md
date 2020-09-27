@@ -16,3 +16,5 @@ Validate different card number of vendors like
 - VISA 
 
 - MASTERCARD 
+
+Using REGEX
